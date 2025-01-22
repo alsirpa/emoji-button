@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dancing Bear</title>
+    <style>
+    body {
+        margin: 0;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* Replace the gradient with background image */
+        background-image: url('bj_office.jpg');  /* Replace 'your-image.jpg' with your image file name */
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+    }
+
+        .bear {
+            font-size: 150px;
+            animation: dance 1s infinite alternate ease-in-out;
+        }
+
+        @keyframes dance {
+            0% {
+                transform: translateY(0) rotate(-5deg);
+            }
+            25% {
+                transform: translateY(-20px) rotate(5deg);
+            }
+            50% {
+                transform: translateY(0) rotate(-5deg);
+            }
+            75% {
+                transform: translateY(-10px) rotate(5deg);
+            }
+            100% {
+                transform: translateY(0) rotate(-5deg);
+            }
+        }
+
+        .flowers {
+            position: absolute;
+            bottom: 20px;
+            font-size: 30px;
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="bear">🐻</div>
+    <div class="flowers">🌸 🌼 🌺 🌸 🌼 🌺 🌸 🌼 🌺</div>
+</body>
+</html>
